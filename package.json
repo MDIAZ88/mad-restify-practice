@@ -1,0 +1,50 @@
+{
+  "name": "spotyapp",
+  "version": "0.0.0",
+  "description": "restify practice",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MDIAZ88/mad-restify-practice.git"
+  },
+  "keywords": [
+    "iojs",
+    "restify",
+    "grunt",
+    "gulp",
+    "istambul",
+    "mocha",
+    "chai",
+    "jasmine",
+    "javascript",
+    "npm"
+  ],
+  "author": "Marcos",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/MDIAZ88/mad-restify-practice/issues"
+  },
+  "homepage": "https://github.com/MDIAZ88/mad-restify-practice",
+  "dependencies": {
+    "restify": "~3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-nodemon": "~2.0.3",
+    "babel": "~5.8.21",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "pre-commit": "^1.1.1",
+    "run-sequence": "^1.1.2",
+    "gulp-load-plugins": "~1.0.0-rc.1",
+    "gulp-util": "~3.0.6",
+    "lodash": "~3.10.1",
+    "restify-routes": "~0.1.2"
+  }
+}
