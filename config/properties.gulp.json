@@ -1,0 +1,23 @@
+{
+  "paths": {
+    "app": "src/**/*.js",
+    "root":"**/*.js",
+    "test": "test/**/*.js"
+  },
+  "nodemon": {
+    "script": "server.js",
+    "ignore": [
+      ".git", "node_modules", "*.json",
+      ".gitignore", "Gulpfile.js", "README.md"
+    ],
+    "delay": 3000,
+    "verbose": true
+  },
+  "test": {
+    "reporters": {
+      "istanbul": [ "lcov", "json", "html" ],
+      "mocha": "spec",
+      "vows": "spec"
+    }
+  }
+}
