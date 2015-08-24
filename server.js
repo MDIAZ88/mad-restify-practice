@@ -1,5 +1,5 @@
 var restify = require('restify');
-var routes = require('./src/routes.js');
+var restifyRoutes = require('restify-routes');
 
 if (process.env.NODE_ENV === 'development') {
 
@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
   server.use(restify.acceptParser(server.acceptable));
   server.use(restify.queryParser());
   server.use(restify.bodyParser());
-  server.use('/',routes);
+  restifyRoutes.set(server, __dirname + '/src/routes');
 
   server.listen(8080,function(){
     console.log('Development Server');
